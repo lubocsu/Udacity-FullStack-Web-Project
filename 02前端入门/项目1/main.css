@@ -1,0 +1,439 @@
+body, html {
+  margin: 0;
+  padding: 0;
+	overflow-x: hidden;
+} 
+
+body {
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.2em;
+}
+
+h1, h2, h3, h4, h5 {
+  margin: 0; 
+}
+
+header, nav, footer, section, article, div {
+  box-sizing: border-box;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  list-style:none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+ *
+ * Common
+ * 
+ */
+
+.more {
+  float: right;
+  font-size: 1em;
+  color: #165c91;
+  text-decoration: none;
+}
+
+
+/*
+ *
+ * Header
+ *
+ */
+
+.header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  min-height: 56px;
+  transition: min-height 0.3s;
+}
+
+.header__inner {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header__logo {
+  height: 72px;
+  margin-right: 1em;
+  margin-left: 1em;
+  vertical-align: top;
+  margin-top: 12px;
+}
+
+.header__title {
+  font-weight: 500;
+  font-size: 3em;
+  margin: 0.75em 0.25em;
+  display: inline-block;
+  color: #165c91;
+}
+
+.header__menu {
+  display: none;
+}
+
+/*
+ *
+ * Top Level Navigation
+ *
+ */
+
+.nav {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav__list {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.nav__item {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 24%;
+  text-align: center;
+  line-height: 24px;
+  padding: 24px;
+}
+
+.nav a {
+  text-decoration:none;
+  color: #165c91;
+  padding: auto;
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+  color: #212121;
+}
+
+
+/*
+ *
+ * Main
+ *
+ */
+
+main {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*
+ *
+ * intro
+ *
+ */
+
+.intro {
+  width: 100%;
+  position: relative;
+  background-image: url("./images/collegegate.jpg");
+  background-size: cover;
+  min-height: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.intro article {
+  box-sizing: border-box;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  padding: 1em;
+}
+
+.description h3 {
+	font-weight: 500;
+}
+
+.description p {
+	font-weight: 300;
+	font-size: 16px;
+}
+/*
+ *
+ *  News
+ *
+ */
+
+.news {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 1em 0em 1em;
+  width: 100%;
+}
+
+.news__title {
+  border-bottom: 1px solid #E0E0E0;
+  line-height: 24px;
+  font-size: 1.5em;
+  font-weight: 500;
+  padding-bottom:10px;
+  color: #165c91 ;  
+}
+
+.news__item {
+  border-bottom: 1px solid #E0E0E0;
+  padding: 1em 0;
+  line-height: 19.2px;
+}
+
+.news__item:before {
+  content: "» ";
+}
+
+.news__item:last-child {
+  border-bottom:none;
+}
+
+.news__item a {
+  text-decoration: none;
+  color: #666;
+  padding: 1.5em;
+  font-weight: 400;
+}
+
+.news__item a:hover,
+.news__item a:active {
+  text-decoration: underline;
+}
+
+
+/*
+ *
+ * Subject Ranking
+ *
+ */
+
+.subjects_ranking {
+  padding-top: 1em;
+  flex-grow: 1;
+}
+
+.ranking__table {
+  width: 100%;
+  border-collapse:collapse;
+  text-align: center;
+}
+
+.ranking__table th,
+.ranking__table td {
+  padding: 1em; 
+}
+
+.ranking__table th {
+  color: #fff;
+  font-weight: 500;
+  background-color: #165c91;
+}
+tbody {
+	color: #165c91;
+}
+
+/*
+ *
+ * Campus life
+ *
+ */
+
+.campus_life {
+  width: 100%;
+  display: block
+}
+
+.campus_life_heading {
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  margin: 16px;
+  color: #165c91;
+}
+
+.campus_life_view {
+  width: 100%;
+  display:list-item;
+  text-align: center;
+}
+
+.campus_life_competition,.campus_life_party,.campus_life_landscape,.campus_life_city {
+  display:inline-block;
+  text-align:center;
+  box-sizing: border-box;
+  margin:1em;
+}
+.campus_life_view h3{
+	font-weight: 400;
+}
+
+.campus_life_view img {
+  width:280px;
+  height:200px; 
+  margin: 1em; 
+}
+
+.campus_life_view h3 {
+	color: #165c91;
+}
+
+
+
+/*
+ *
+ * Academicians
+ *
+ */
+
+.academicians {
+  flex-grow: 1;
+  clear: both;
+  padding: 1em;
+}
+
+.academicians h2 { 
+	font-weight: 400;
+	margin-top: 16px;	
+	margin-bottom: 16px;
+	color: #165c91;
+}
+
+.scholar_name h3 {
+	display: block;
+}
+
+.scholar_name a {
+	font-weight: 400;
+	color: #165c91;
+}
+
+
+.scholar__thumbnail {
+  width: 100px;
+  float: left;
+  margin-right: 1em;  
+}
+
+.academicians__title {
+  font-weight: 500;
+}
+
+.academicians__title a {
+  text-decoration: none;
+  color: #165c91;
+  padding: auto;
+}
+
+.academicians__title a:hover,
+.academicians__title a:active {
+  text-decoration: underline;
+}
+
+
+.scholar__thumbnail > img {
+  width: 100%;
+}
+
+.breif_intro {
+  display: flex;
+  flex-wrap: wrap;
+  clear: both;
+  margin: 24px 0;
+}
+
+.scholar_name {
+  order: 0;
+  width: 100%;
+  margin: 0 0 0.5em;
+}
+
+.scholar__thumbnail {
+  order: 1;
+  width: 20%;
+}
+
+.scholar_description {
+  order: 2;
+  width: 70%;
+  margin: 0;
+  padding: 0 0 0 1em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: 400;
+}
+
+/*
+ *
+ * Footer
+ *
+ */
+
+footer {
+  display: block;
+  clear: both;
+  width: 100%; 
+}
+
+.footer_logo_nav{
+	display: block;
+	background: url(images/footer_background.jpg);
+}
+
+.footer_logo {
+	position: relative;
+	left: 20%;
+	top:70px;
+	width:-webkit-max-content;
+}
+
+
+.footer_nav {
+  display: block;
+  position: relative;
+  left: 70%;
+  top:-30px;
+	width:-webkit-max-content;
+}
+
+.footer_nav a {
+  text-decoration: none;
+  color:#FFFFFF;  
+}
+
+.footer_nav li {
+	display: block;
+	margin-bottom:0.5em ;
+	width: -webkit-max-content;
+}
+
+.copyright {
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+.copyright p {
+  margin-bottom: 1em;
+  color: black;
+}
+
+.intro, .news, .subjects_ranking, .campus_life, .academicians {
+  order: 10;
+}

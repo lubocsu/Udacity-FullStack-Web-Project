@@ -1,0 +1,143 @@
+.endurence_logo{
+	max-height: 75px;
+	vertical-align: middle;
+}
+
+.helper{
+	display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.logo{
+	display: none;	
+}
+.title h1{
+	text-align: center;
+	font-size: 24px;
+	color: #000000;
+	margin-bottom: 0px;
+	margin-top: 8px;
+}
+	
+.company_introduction {
+	font-size: 20px;
+	font-weight: 800;	
+}
+
+.intro :nth-child(n+2):nth-child(-n+3){
+	text-indent:2em;
+	font-size: 16px;
+}
+
+.more {
+	text-align: right;
+}
+.product_display {
+	font-size: 20px;
+	font-weight: 800;
+}
+.product_wall{
+	display: flex;
+	flex-wrap: wrap;
+    justify-content:center;
+}
+.product_wall div{
+	text-align: center;
+}
+
+.product_wall img{
+	height: 150px;
+}
+
+.military h3,.fluid h3,.enviroment h3,.automobile h3{
+	font-size: 19px;
+	font-weight: 700;
+}
+
+ a:-webkit-any-link{
+ 	color: #000000;
+ }
+
+footer {
+	display: block;	
+	background-color:#d3d6d8 ;
+}
+.content {
+	text-align: center;
+}
+
+.nav {
+	list-style-type: none;
+	-webkit-padding-start: 0;
+	display: inline-block;	
+}
+
+.nav a {
+	color: #000000;
+}
+
+.copy_right {
+	text-align: center;
+	
+}
+.copy_right p {
+	-webkit-margin-before: 0px;
+}
+
+.intro :nth-child(n+2):nth-child(-n+3) {		
+	   display: -webkit-box;
+	   -webkit-box-orient: vertical;
+	   overflow: hidden;
+	   text-overflow: ellipsis;
+	   -webkit-line-clamp: 6;
+}
+
+@media screen and (min-width:520px ) {
+	.nav li{
+	display: inline-block;
+	text-align: center;
+	width: 24%;
+    }
+    
+    .nav{
+    	display: block;
+    }
+    .intro :last-child{
+	display: none;
+    }  
+}
+
+
+@media screen and (min-width:640px ) {  
+    .logo{
+	display: block;
+	height: 75px;
+	width: 129px;
+	width: -webkit-max-content;
+	position: relative;
+	left: 1%;
+    }
+    .title{
+    display: block;
+    width: -webkit-max-content;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    }
+    header{
+    	text-align: center;
+    	height: auto;
+    }
+    .logo span {
+    	display: none;
+    }
+}
+@media screen and (min-width:850px ) {
+	article,.display,header,footer {
+		margin: auto;
+		margin: auto;
+		width: 850px;		
+	}
+	
+}

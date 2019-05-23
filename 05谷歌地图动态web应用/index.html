@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Chongqing Tourism </title>
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/bootstrap.min.modal.css">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 nav-menu">
+                    <h2>Chongqing Favourite Destination</h2>
+                    <div>
+                        <input data-bind="textInput: filterText" type="text" style="width: 100%" placeholder="Quick filter">
+                    </div>
+                    <ul class="list-group" data-bind="foreach: filteredPlaces">
+                        <li class="list-group-item" data-bind="text: name, click: itemClick()"></li>
+                    </ul>
+                </div>
+                <div class="map-view">
+                    <div id="map" class="col-md-8 map"></div>
+                </div>
+            </div>
+        </section>
+        <script src="js/knockout-3.4.2.js"></script>
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/model.js"></script>
+        <script src="js/app.js"></script>
+        <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDKV7Nh4wLfoA6UmaKtD4ghppnaYioE2VE&v3&callback=startApp" onerror="mapError()" ></script>
+    </body>
+</html>

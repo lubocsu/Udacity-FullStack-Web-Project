@@ -1,0 +1,139 @@
+@media screen and (max-width: 657px) {
+  .header__logo {
+	position: absolute;
+	left: -9999px;
+  }
+  
+  .header__title {
+    margin-left: 1em;
+    font-size: 1.5em;
+    vertical-align:bottom; 
+  }
+  .nav {
+    z-index: 10;
+    background-color: #fff;
+    width: 300px;
+    position: absolute;
+/*  This trasform moves the drawer off canvas. */
+    -webkit-transform: translate(-300px, 0);
+    transform: translate(-300px, 0);
+    /* Optionally, we animate the drawer.*/
+		transition: transform 0.3s ease;
+  }
+  .nav.open {
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+  .nav__item {
+    display: list-item;
+    border-bottom: 1px solid #E0E0E0;
+    width: 100%;
+    text-align: left;
+  }
+  .header__menu {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    padding: 1em;
+  }
+  .header__menu svg {
+    width: 32px;
+    fill: #E0E0E0;
+  }
+}
+
+@media screen and (min-width: 611px) {
+  .intro {
+    order: 0;
+    width: 50%;
+  }
+  .news {
+  	order: 1;
+  	width: 50%;
+  }
+  .subjects_ranking {
+    order: 2;
+  }
+  .academicians {
+    order: 3;
+  }
+	.campus_life{
+		order: 4;
+	}
+	.header__inner{
+		text-align: center;	
+	} 
+}
+
+@media screen and (min-width: 850px) {
+  main, .header__inner, .nav, .intro {
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;     
+  }
+  .news {
+  	order: 1;
+  	width: 100%;
+  }  
+}
+
+@media screen and (max-width: 450px) {
+  .scholar__thumbnail {
+    display: none;
+  }
+
+  .scholar_description {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .ranking__table .star_level,.ranking__table .education_level {
+    display: none;
+  }
+  
+}
+
+@media screen and (max-width: 650px) {
+  .scholar__thumbnail {
+    width: 30%;
+    margin: 0;
+  }
+
+  .scholar_description {
+    -webkit-line-clamp: 6;
+    max-height: 7em;
+  }
+}
+
+@media screen and (min-width: 700px) {
+  .ranking__table {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width:650px){
+	.footer_logo_nav{
+		text-align: center;
+	}
+	
+	.footer_logo{
+	width: 100%;
+	position: initial;
+	}
+	.footer_nav{
+  position:initial;  
+  width: 100%;
+  text-align: center;	  	
+	}
+	.footer_nav li{
+	display: inline-block;
+	}
+}
+
+@media screen and (max-width:500px){
+	.footer_nav li{
+	width: 100%;
+	}
+}
